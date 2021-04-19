@@ -3,7 +3,8 @@ import pyperclip
 def convertMac():
     '''Program to convert from non hyphenated MAC Addresses to fully Hyphenated Addresses
     These MAC Addresses are then copied into the clipboard
-    EX: 1234567891234567 -> 1234-5678-9123-4567'''
+    EX: 1234567891234567 -> 1234-5678-9123-4567
+    This is a test to see if my git changes work'''
 
     mac = input('Type your MAC address here: ')
     count = 0
@@ -17,6 +18,6 @@ def convertMac():
             count+=1 
     print(convertedMac[0:17])
     pyperclip.copy(convertedMac[0:17])
-
+    
 while True:
     convertMac()
